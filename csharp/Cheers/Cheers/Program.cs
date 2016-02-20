@@ -13,11 +13,10 @@ namespace Cheers
             var nameQuestion = "Whats your name?";
             Console.WriteLine(nameQuestion);
             var name = Console.ReadLine();
-            //var giveMe = "Give me";
+            var nameUpper = name.ToUpper();
             var halfNorseMix = "HALFNORSEMIX";
-            foreach (var letter in name)
+            foreach (var letter in nameUpper)
             {
-                //if(name[letter] == 'a' || name[letter] == 'e' || name[letter] == 'i' || name[letter] == 'o' || name[letter] == 'u')
                 if (halfNorseMix.IndexOf(letter) == -1)
                 {
                     Console.WriteLine("Give me a " + letter);
@@ -26,7 +25,7 @@ namespace Cheers
                     Console.WriteLine("Give me an " + letter);
                 };
             }
-            Console.WriteLine("press any key to bye bye");
+            Console.WriteLine(name + " is... GRAND!");
             Console.ReadLine();
         }
     }
