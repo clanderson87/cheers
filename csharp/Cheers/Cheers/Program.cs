@@ -10,6 +10,9 @@ namespace Cheers
     {
         static void Main(string[] args)
         {
+            var nameQuestion = "Whats your name?";
+            Console.WriteLine(nameQuestion);
+            Console.ReadLine();
         }
     }
 }
