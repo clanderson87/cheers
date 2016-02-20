@@ -12,7 +12,8 @@ namespace Cheers
         {
             var nameQuestion = "Whats your name?";
             Console.WriteLine(nameQuestion);
-            Console.ReadLine();
+            var name = Console.ReadLine();
+            Console.WriteLine(name);
         }
     }
 }
